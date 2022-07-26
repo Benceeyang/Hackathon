@@ -1,4 +1,5 @@
-import {strings} from './src/strings.js';
+import { Arr, compareArrays } from './src/arrays.js';
+import {concatenate, strings, templateLiterals} from './src/strings.js';
 
 document.title = "Hackathon"; 
 
@@ -11,4 +12,15 @@ document.body.prepend(div)
 
 div.style.color = "blue";
 div.style.textAlign = 'center'
-console.log(strings("I am calling this function and passing this text as an argument"))
+console.log(strings("I am calling this function and passing this text as an argument"));
+console.log(concatenate("I am calling this function and passing this text as an argument."));
+console.log(templateLiterals("I am calling this function and passing this text as an argument."));
+
+let o = [1,2,3,4];
+let v = [1,2,3,4,5];
+console.log(Arr(o));
+console.log(compareArrays(o,v))
+
+
+
+
