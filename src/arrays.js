@@ -11,3 +11,7 @@ export function compareArrays(d,t){
         return `${d} ${t} are the same`
     }
 };
+
+export function stringToArray(f){
+    return f.split(",")
+}

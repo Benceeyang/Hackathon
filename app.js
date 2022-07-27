@@ -1,5 +1,6 @@
-import { Arr, compareArrays } from './src/arrays.js';
+import { Arr, compareArrays, stringToArray} from './src/arrays.js';
 import {concatenate, strings, templateLiterals} from './src/strings.js';
+import {forLoop} from './src/loops.js';
 
 document.title = "Hackathon"; 
 
@@ -22,5 +23,10 @@ console.log(Arr(o));
 console.log(compareArrays(o,v))
 
 
+let alpha = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"
+console.log(stringToArray(alpha))
 
+console.log(alpha)
 
+let beta = stringToArray(alpha);
+console.log(forLoop(beta))
